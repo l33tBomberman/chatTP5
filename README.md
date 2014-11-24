@@ -37,9 +37,13 @@ automaticamente atualizada a cada 60 segundos.
 protocolos TCP/IP.
 · O protocolo do chat deverá possuir o seguinte formato:
 +---------+------------+-------------------+----------+
-| serviço | tam. dados | dados | checksum |
+
+| serviço | tam. dados | dados 			   | checksum |
+
 +---------+------------+-------------------+----------+
-| 1 byte | 2 bytes | (tam.dados) bytes | 2 bytes |
+
+| 1 byte  | 2 bytes    | (tam.dados) bytes | 2 bytes  |
+
 +---------+------------+-------------------+----------+
 · O campo serviço possui comprimento de 1 byte e designará qual
 serviço será executado no cliente/servidor. A lista de serviços será
